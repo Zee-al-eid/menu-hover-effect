@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Item Hover Effects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button type="button" id="btn" class="big-button" onclick="showMenu()">
+      Menu
+    </button>
+    <ul>
+      <li><a href="#" data-text="Home">Home</a></li>
+      <li><a href="#" data-text="About">About</a></li>
+      <li><a href="#" data-text="Services">Services</a></li>
+      <li><a href="#" data-text="Work">Work</a></li>
+      <li><a href="#" data-text="Team">Team</a></li>
+      <li><a href="#" data-text="Contact">Contact</a></li>
+    </ul>
+    <h1>Click Menu Button To See Menu</h1>
+    <script>
+      showMenu = () => {
+        var list = document.body.children[1];
+        list.classList.toggle("show-menu");
+        var h1 = document.body.children[2];
+        h1.classList.toggle("hide-h1");
+      };
+    </script>
+  </body>
+</html>
